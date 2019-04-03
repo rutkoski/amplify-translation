@@ -1,0 +1,42 @@
+{
+    "name": "rutkoski/amplify-translation",
+    "description": "Manage Laravel Translations",
+    "keywords": ["laravel", "translations", "translator", "language"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Barry vd. Heuvel",
+            "email": "barryvdh@gmail.com"
+        },        
+        {
+            "name": "Amplify",
+            "email": "adam@highsolutions.pl"
+        },
+        {
+            "name": "Rodrigo Rutkoski Rodrigues",
+            "email": "rutkoski@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/console": "5.*",
+        "illuminate/support": "5.*",
+        "symfony/finder": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Amplify\\Translation\\": "src/"
+        }
+    },
+    "extra": {
+        "component": "package",
+        "frameworks": ["Laravel 5.7"],
+        "laravel": {
+            "providers": [
+                "Amplify\\Translation\\ManagerServiceProvider",
+                "Amplify\\Translation\\TranslationServiceProvider"
+            ]            
+        }
+    },
+    "minimum-stability": "stable"
+}
